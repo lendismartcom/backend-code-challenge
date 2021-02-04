@@ -2,7 +2,7 @@
 
 Welcome to the coding challenge! We're glad you made it so far! :)
 
-#What are we building?
+# What are we building?
 
 In this coding challenge we'll be building a very simple API for social network app. Think
 of it as an overly simplified version of Instagram.
@@ -60,7 +60,11 @@ public class Like {
 
 This project was generated with spring initializr and it has these dependencies:
 
-
+- H2 Database
+- Lombok
+- Spring Data JPA
+- Spring Web
+- Spring Boot DevTools
 
 # What should be implemented?
 
@@ -106,6 +110,7 @@ This project was generated with spring initializr and it has these dependencies:
 
 - Decouple and make the code as reusable and generic as it makes sense to be.
 
+# How do I start?
 
 Remember that you can use Lombok since it has been added as a dependency.
 
