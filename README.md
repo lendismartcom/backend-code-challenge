@@ -97,7 +97,9 @@ This project was generated with spring initializr and it has these dependencies:
   
     - Delete a `Like`.
   
-    - An endpoint that will return in a `List` the username and the number of likes he/she got in the last month.
+    - An endpoint that will return in a `List` the username, the number of likes he/she got in the last month, the total 
+      number of posts, and the like per post ratio (number of total likes divided by number of posts). Order the list
+      in a descending manner based on the like per post ratio.
   
 # What do I need to do for brownie points?
   
