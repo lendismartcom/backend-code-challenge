@@ -4,7 +4,7 @@ Welcome to the coding challenge! We're glad you made it so far! :)
 
 # What are we building?
 
-In this coding challenge we'll be building a very simple API for social network app. Think
+In this coding challenge we'll be building a very simple API for a social network app. Think
 of it as an overly simplified version of Instagram.
 
 Three domain objects will be used: `User`, `Post` and `Like`. These domain objects represent
