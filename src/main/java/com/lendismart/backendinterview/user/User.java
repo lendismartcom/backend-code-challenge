@@ -1,4 +1,6 @@
-package com.lendismart.backendinterview.domain;
+package com.lendismart.backendinterview.user;
+
+import com.lendismart.backendinterview.post.Post;
 
 /**
  * A User represents a user account in our fake Instagram example.

@@ -1,4 +1,6 @@
-package com.lendismart.backendinterview.domain;
+package com.lendismart.backendinterview.post;
+
+import com.lendismart.backendinterview.like.Like;
 
 /**
  * A Post is something a user uploads, therefore it belongs to a user.
