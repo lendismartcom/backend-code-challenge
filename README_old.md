@@ -18,10 +18,8 @@ concepts we all know and use in a way or another. These classes are already crea
  * A User must have:
  *
  * - a username.
- * - a set of {@link Post}.
+ * - a set of {@link Post}
  * - a creation timestamp.
- * - a country code.
- * - a phone number.
  */
 public class User {
 
@@ -70,32 +68,35 @@ This project was generated with spring initializr and it has these dependencies:
 - The domain objects shown above should be converted to JPA entities, and their fields should be created and
   mapped to columns following the instructions in their corresponding JavaDocs. Remember that H2 is set up 
   as an in memory database, so you don't need to add an external dependency if you don't want to, if you feel
-  more comfortable adding Postgres/MySQL feel free to do that. Make sure the IDs are generated as an integer number.
+  more comfortable adding Postgres/MySQL feel free to do that.
   
 - Now that the domain objects are mapped to the database as JPA entities, repositories and services should be 
-  created that will allow us to make CRUD operations. In this case we'll only create the service and repository
-  for `User` domain object
+  created that will allow us to make CRUD operations. Also, tests must be written to ensure that our mappings 
+  are correct and objects can be persisted to the database.
   
-- The next step is to create a controller that will allow us to do the following:
+- The next step is to create controllers that will allow us to do the following:
   
     - Create a `User`. Check that the username is unique and if it's not unique handle the exception with an `@ExceptionHandler`.
   
-    - Update a `User`. Remember that usernames must be unique and exceptions should be handled.
+    - Change the username of `User`. Remember that usernames must be unique and exceptions should be handled.
 
     - Get all the `User`s. In the response only the username should be included and not all the posts the user has.
       
-    - Get a user
-     
-    - Delete a single user
+    - Create a `Post`.
 
-    - Delete multiple users
+    - Get all the posts belonging to a specific `User`. In the response, each `Post` should include the `Like`s it has.
   
-    - The comments are handled by another service. Create an endpoint and a client that consumes this 
-      API https://jsonplaceholder.typicode.com/ to get the comments related with a specific post.
+    - Delete a single `Post`.
   
-    - Create an endpoint that recovers the phone code and currency for User by calling this SOAP web
-      service http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL. 
-      You can find more information about this service here: https://documenter.getpostman.com/view/8854915/Szf26WHn#33a2b225-11a6-48d3-a695-fb0989cc4971
+    - Delete multiple `Post`.
+
+    - Create a `Like` for a specific post.
+  
+    - Delete a `Like`.
+  
+    - An endpoint that will return in a `List` the username, the number of likes he/she got in the last month, the total 
+      number of posts, and the like per post ratio (number of total likes divided by number of posts). Order the list
+      in a descending manner based on the like per post ratio.
   
 # What do I need to do for brownie points?
   
@@ -103,6 +104,10 @@ This project was generated with spring initializr and it has these dependencies:
   the application layers.
   
 - It would also be nice to have a mechanism that logs the user-agent in the console on each HTTP request that is made.
+
+- Add JavaDocs
+
+- Decouple and make the code as reusable and generic as it makes sense to be.
 
 # How do I start?
 
