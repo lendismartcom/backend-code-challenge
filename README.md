@@ -57,7 +57,7 @@ public class Like {
 }
 ```
 
-This project was generated with spring initializr and it has these dependencies:
+This project was generated with Spring initializr and it has these dependencies:
 
 - H2 Database
 - Lombok
