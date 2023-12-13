@@ -11,7 +11,6 @@ Three domain objects will be used: `User`, `Post` and `Like`. These domain objec
 concepts we all know and use in a way or another. These classes are already created in the project.
 
 ```java
-package com.lendismart.backendinterview.domain;
 
 /**
  * A User represents a user account in our fake Instagram example.
@@ -28,7 +27,6 @@ public class User {
 ```
 
 ```java
-package com.lendismart.backendinterview.domain;
 
 /**
  * A Post is something a user uploads, therefore it belongs to a user.
@@ -44,7 +42,6 @@ public class Post {
 ```
 
 ```java
-package com.lendismart.backendinterview.domain;
 
 /**
  * A Like belongs to a {@link Post}
