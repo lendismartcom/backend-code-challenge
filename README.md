@@ -70,7 +70,7 @@ This project was generated with Spring initializr and it has these dependencies:
 - The domain objects shown above should be converted to JPA entities, and their fields should be created and
   mapped to columns following the instructions in their corresponding JavaDocs. Remember that H2 is set up 
   as an in memory database, so you don't need to add an external dependency if you don't want to, if you feel
-  more comfortable adding Postgres/MySQL feel free to do that. Make sure the IDs are generated as an integer number.
+  more comfortable adding Postgres/MySQL feel free to do that. Make sure the IDs are generated as an integer.
   
 - Now that the domain objects are mapped to the database as JPA entities, repositories and services should be 
   created that will allow us to make CRUD operations. In this case we'll only create the service and repository
