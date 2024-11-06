@@ -99,7 +99,7 @@ This project was generated with Spring initializr and it has these dependencies:
 
     - Create an endpoint that recovers the phone code and currency for User by calling this SOAP web
       service http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL.
-      You can find more information about this service here: https://documenter.getpostman.com/view/8854915/Szf26WHn#33a2b225-11a6-48d3-a695-fb0989cc4971
+      You can find more information about this service here: https://www.postman.com/cs-demo/public-soap-apis/request/1bumq27/international-phone-code-for-a-country-copy
 
 # What do I need to do for brownie points?
 
